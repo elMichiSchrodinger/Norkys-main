@@ -1,6 +1,11 @@
 import { useNavigate } from 'react-router-dom';
+import type { FC } from 'react'; // opcional, pero recomendado
 
-const PaymentSuccessModal = ({ onClose }) => {
+interface PaymentSuccessModalProps {
+  onClose: () => void;
+}
+
+const PaymentSuccessModal:FC<PaymentSuccessModalProps> = ({ onClose }) => {
     const navigate = useNavigate();
 
     const handleContinue = () => {

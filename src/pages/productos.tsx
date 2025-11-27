@@ -11,7 +11,7 @@ const Productos = () => {
     ];
 
     // Esta función la mantenemos SOLO para los clics manuales en la barra superior
-    const scrollToCategory = (catName) => {
+    const scrollToCategory = (catName:string) => {
         const id = catName.replace(/\s+/g, '-');
         const element = document.getElementById(id);
         if (element) {

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { supabase } from '../utils/supabase'; 
 import { useNavigate, Link } from 'react-router-dom';
+import type { FormEvent } from 'react'; // ✅ Importación tipo-only
 import logo from '../assets/img/logo_actual.jpg'
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
@@ -13,7 +14,7 @@ const Registro = () => {
     const navigate = useNavigate();
 
     // Registro con Correo y Contraseña
-    const handleRegister = async (e) => {
+    const handleRegister = async (e: FormEvent) => {
         e.preventDefault();
         setLoading(true);
         
@@ -31,7 +32,11 @@ const Registro = () => {
             alert("Registro exitoso. Por favor inicia sesión.");
             navigate('/login');
         } catch (error) {
-            alert(error.message);
+            if (error instanceof Error) {
+                alert(error.message);
+            } else {
+                alert("Ocurrió un error desconocido.");
+            }
         } finally {
             setLoading(false);
         }

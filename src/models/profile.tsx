@@ -6,4 +6,5 @@ export interface Profile {
   telefono: string | null;
   direccion: string | null;
   rol: 'usuario' | 'admin';
+  email?: string;
 }

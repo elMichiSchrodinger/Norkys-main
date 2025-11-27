@@ -1,6 +1,10 @@
 import { useState } from 'react'
 
-const Carousel = ({ images }) => {
+interface CarouselProps {
+  images: string[]; // arreglo de URLs o rutas de imágenes
+}
+
+const Carousel = ({ images }: CarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const next = () => setCurrentIndex((prev) => (prev + 1) % images.length)

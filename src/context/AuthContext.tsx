@@ -1,6 +1,7 @@
-import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
+import { createContext, useContext, useEffect, useState } from 'react';
+import type { ReactNode } from 'react';
 import { supabase } from '../utils/supabase';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import type { User } from '@supabase/supabase-js';
 import type { Profile } from '../models/profile';
 
@@ -21,8 +22,6 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     const [authError, setAuthError] = useState<string | null>(null);
     
     const navigate = useNavigate();
-    const location = useLocation();
-
     useEffect(() => {
         let mounted = true;
 

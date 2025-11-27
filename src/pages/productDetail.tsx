@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { getProductoById } from '../services/producto_service';
 // 1. Importar hook
 import { useCart } from '../context/CartContext'; 
-import Navbar from '../components/Navbar';
+import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 
 const ProductDetail = () => {
