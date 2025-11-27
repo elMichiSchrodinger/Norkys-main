@@ -20,7 +20,7 @@ const Home = () => {
     const images = [image_path+'promociones/AMOR_A_LA_BRASA.jpg',image_path+'promociones/promocion_1_4.webp', image_path+'promociones/cajita_infantil.jpg']
     const categories = [
         { id: 1, title: 'Promoción', img: image_path+'promociones/1_pollo_1_papas_1_ensalada_1.5_gaseosa.png' },
-        { id: 2, title: 'Brasas', img: image_path+'brasas/WEBP/1_4 pollo+papa+ensalada+gaseosa.webp' },
+        { id: 2, title: 'Brasas', img: image_path+'brasas/WEBP/1_4_pollo+papa+ensalada+gaseosa.webp' },
         { id: 3, title: 'Broaster', img: image_path+'broaster/WEBP/ComboBroasterx10.webp' },
         { id: 4, title: 'Parrillas', img: image_path+'parrillas/WEBP/1_2_PARRILLA_BRASA.webp' },
         { id: 5, title: 'Postres', img: image_path+'postres/PNG/TRES_LECHES.png' },
