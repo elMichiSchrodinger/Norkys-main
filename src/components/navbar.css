@@ -1,0 +1,71 @@
+/*Diseño del buscador*/
+.bar-navegation{
+    height: 50px;
+}
+.form-search {
+ padding: 0 10px;
+ background-color: #009951;
+ border-radius: 20px;
+ height: 35px;
+ width: 30%;
+
+}
+
+.bar-menu{
+    height: 30px;
+}
+
+.logo {
+    height: 45px;
+}
+
+.search {
+    padding: 0px 15px;
+    background-color: #fff;
+    border-radius: 15px;
+    outline: none;
+    height: 23px;
+    font-size: 12px;
+    width: 95%;
+}
+
+.lupa {
+    filter: brightness(0) invert(1);
+    line-height: 2;
+    cursor: pointer;
+}
+
+
+.user {
+    width: 119px;
+    height: 30px;
+}
+
+
+
+.shop-car{
+    height: 40px;
+    width: 75px;
+    background-color: #009951;
+    border-radius: 15px;
+    color: #FED800;
+}
+
+.shop-car svg{
+    width: 30px;
+    fill: #FED800;
+}
+
+
+/*Offcanvas*/
+
+.boton {
+    background-color: #009951;
+    color: #FED800;
+    padding: px 15px;
+    border-radius: 15px;
+}
+
+.boton:hover {
+    
+}
