@@ -20,7 +20,7 @@ import PerfilAdmin from './pages/admin/perfilAdmin';
 import ProductForm from './pages/admin/productoForm';
 import AdminRoute from './components/AdminRoute';
 
-// localStorage.clear()
+localStorage.clear()
 
 function App() {
   return (
